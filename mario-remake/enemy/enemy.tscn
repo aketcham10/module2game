@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://bybbustdoqcnv"]
+
+[ext_resource type="Texture2D" uid="uid://de7y5nm1o34pr" path="res://assets/goomba.png" id="1_2mvqj"]
+[ext_resource type="Script" uid="uid://bapi4f053v4d5" path="res://enemy/enemy.gd" id="1_ofsxj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ofsxj"]
+size = Vector2(34, 36)
+
+[sub_resource type="Animation" id="Animation_ppra6"]
+resource_name = "walk"
+length = 0.75
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_p200p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pmsee"]
+_data = {
+&"RESET": SubResource("Animation_p200p"),
+&"walk": SubResource("Animation_ppra6")
+}
+
+[node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
+script = ExtResource("1_ofsxj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2mvqj")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 4)
+shape = SubResource("RectangleShape2D_ofsxj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_pmsee")
+}
+autoplay = "walk"

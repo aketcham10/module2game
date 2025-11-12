@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8vmvt2jabrx"]
+
+[ext_resource type="Script" uid="uid://slwv8r4nw5i1" path="res://ui/hud.gd" id="1_276te"]
+[ext_resource type="Texture2D" uid="uid://dhk5wghxyxhm7" path="res://assets/heart.png" id="1_rbyyf"]
+
+[node name="HUD" type="MarginContainer"]
+offset_right = 104.0
+offset_bottom = 40.0
+script = ExtResource("1_276te")
+
+[node name="Lives" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="L1" type="TextureRect" parent="Lives"]
+layout_mode = 2
+texture = ExtResource("1_rbyyf")
+
+[node name="L2" type="TextureRect" parent="Lives"]
+layout_mode = 2
+texture = ExtResource("1_rbyyf")
+
+[node name="L3" type="TextureRect" parent="Lives"]
+layout_mode = 2
+texture = ExtResource("1_rbyyf")
