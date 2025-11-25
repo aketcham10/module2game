@@ -1,0 +1,13 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1764042688
+deer male calciumtrice.png::CompressedTexture2D::3652681381517815870::1764038012::1764038012::1::::<><><>0<>0<>5da2ea293cdd98b5b1f8e3edc975d28d<>res://.godot/imported/deer male calciumtrice.png-4c7f4d79621334242244d39951dcc5f2.ctex::
+icon.svg::CompressedTexture2D::8221133582226921206::1764037932::1764037935::1::::<><><>0<>0<>32fcf636785b19557fe5b1205f9c6b12<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+line.png::CompressedTexture2D::5789273384954569790::1764042730::1764042731::1::::<><><>0<>0<>15278f102643090771411f0575e28144<>res://.godot/imported/line.png-e86270f75d5b95d6fc8473dba8c1eec6.ctex::
+node_2d.tscn::PackedScene::8226714909790140929::1764042472::0::1::::<><><>0<>0<><>::uid://d1uqmix78wxhf::::res://stick guy.png
+second deer.png::CompressedTexture2D::2819740874524678695::1764039754::1764039758::1::::<><><>0<>0<>3cb545e8ae7104adbe83ee2e84587807<>res://.godot/imported/second deer.png-44862e09c0b2e60fdae207c301eef911.ctex::
+single deer.png::CompressedTexture2D::8655229808311680157::1764038085::1764038087::1::::<><><>0<>0<>169ac324f7e4d5e5d1190dc907a1c90d<>res://.godot/imported/single deer.png-2bf41a695d9487a5a044234861413f14.ctex::
+stick guy.png::CompressedTexture2D::9026452899376689743::1764041499::1764041500::1::::<><><>0<>0<>6c44184e80215985e28d574f6d54ce4b<>res://.godot/imported/stick guy.png-46f0e1c81f4ffc030aa482ddc94cd583.ctex::
+::res://addons/::1764037951
+::res://addons/auto_polygon2d_triangulation/::1764037951
+auto_poly_plugin.gd::GDScript::6479675275336090116::1764037951::0::1::::<>EditorPlugin<><>0<>1<><>::
+plugin.cfg::TextFile::-1::1764037951::0::1::::<><><>0<>0<><>::
