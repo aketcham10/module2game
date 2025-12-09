@@ -1,0 +1,285 @@
+[gd_scene load_steps=43 format=3 uid="uid://ddd3oi1w6wnxs"]
+
+[ext_resource type="PackedScene" uid="uid://dxtydfca82vpm" path="res://assets/pool table/pool_table.blend" id="1_noarx"]
+[ext_resource type="PackedScene" uid="uid://cg0ax7kxtdg8o" path="res://assets/balls/1Ball.blend" id="2_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://8h3bupqkly1" path="res://assets/balls/CueBall.blend" id="2_tuemg"]
+[ext_resource type="PackedScene" uid="uid://b05foi6aay2b2" path="res://assets/balls/2Ball.blend" id="3_tcnuu"]
+[ext_resource type="PackedScene" uid="uid://bl15h1hc5dfmf" path="res://assets/balls/3Ball.blend" id="4_tuemg"]
+[ext_resource type="PackedScene" uid="uid://mx83thjvpgyb" path="res://assets/balls/4Ball.blend" id="5_i0g27"]
+[ext_resource type="PackedScene" uid="uid://bwg11n518o1hi" path="res://assets/balls/5Ball.blend" id="6_ealrb"]
+[ext_resource type="PackedScene" uid="uid://b34m3angwmuc0" path="res://assets/balls/6Ball.blend" id="7_jsnrv"]
+[ext_resource type="PackedScene" uid="uid://bji1uim014e55" path="res://assets/balls/7Ball.blend" id="8_lggff"]
+[ext_resource type="PackedScene" uid="uid://b8fi40ci4opb5" path="res://assets/balls/8Ball.blend" id="9_s0gvp"]
+[ext_resource type="PackedScene" uid="uid://co72xgu57igyx" path="res://assets/balls/9Ball.blend" id="10_vxd74"]
+[ext_resource type="PackedScene" uid="uid://053j3xvyljqd" path="res://assets/balls/10Ball.blend" id="11_dhlwf"]
+[ext_resource type="PackedScene" uid="uid://oyo82xw1dtbu" path="res://assets/balls/11Ball.blend" id="12_5t8nk"]
+[ext_resource type="PackedScene" uid="uid://q2hemfu1uaoi" path="res://assets/balls/12Ball.blend" id="13_j3e5s"]
+[ext_resource type="PackedScene" uid="uid://dj5fn60w32ej1" path="res://assets/balls/13Ball.blend" id="14_nu31w"]
+[ext_resource type="PackedScene" uid="uid://vgyatujsl4se" path="res://assets/balls/14Ball.blend" id="15_obt1j"]
+[ext_resource type="PackedScene" uid="uid://uvi76se3pfme" path="res://assets/balls/15Ball.blend" id="16_2yde8"]
+[ext_resource type="PackedScene" uid="uid://cme6pqywg0ceq" path="res://assets/pool cue/pool_cue.blend" id="18_i0g27"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tcnuu"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_tuemg"]
+sky_material = SubResource("ProceduralSkyMaterial_tcnuu")
+
+[sub_resource type="Environment" id="Environment_i0g27"]
+background_mode = 2
+sky = SubResource("Sky_tuemg")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tcnuu"]
+friction = 0.03
+bounce = 0.3
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1q667"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tcnuu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tuemg"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i0g27"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ealrb"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jsnrv"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lggff"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_s0gvp"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vxd74"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dhlwf"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_5t8nk"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_j3e5s"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nu31w"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_obt1j"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2yde8"]
+radius = 0.03
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_id0nj"]
+radius = 0.03
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tcnuu"]
+size = Vector3(1.2, 1, 2.594)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tuemg"]
+size = Vector3(0.087, 0.2, 1.166)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i0g27"]
+size = Vector3(1.117, 0.2, 0.187)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ealrb"]
+height = 1.4458008
+radius = 0.02
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_i0g27")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25000003, 0.40048075, -0.30136296, 0.86532974, -0.2993581, 0.8495177, 0.43440124, 0.26741546, 4.189172, 1.6775723)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.787527, 0.6162802, 0, -0.6162802, 0.787527, 0, 0.9326621, 1.6300943)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_tcnuu")
+
+[node name="pool_table" parent="StaticBody3D" instance=ExtResource("1_noarx")]
+
+[node name="Cueball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09487927, 0.5742929)
+linear_velocity = Vector3(0, 0, -2.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/Cueball"]
+shape = SubResource("SphereShape3D_1q667")
+
+[node name="CueBall" parent="StaticBody3D/pool_table/Cueball" instance=ExtResource("2_tuemg")]
+
+[node name="1ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.057456806, -0.7036675)
+
+[node name="1Ball" parent="StaticBody3D/pool_table/1ball" instance=ExtResource("2_a0tk4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/1ball"]
+transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, 0, 0, 0)
+shape = SubResource("SphereShape3D_tcnuu")
+
+[node name="2ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.061198384, 0.057456806, -0.9198624)
+
+[node name="2Ball" parent="StaticBody3D/pool_table/2ball" instance=ExtResource("3_tcnuu")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/2ball"]
+transform = Transform3D(0.06, 0, 0, 0, 0.06, 0, 0, 0, 0.06, 0, 0, 0)
+shape = SubResource("SphereShape3D_tuemg")
+
+[node name="3ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03331785, 0.057456806, -0.8682775)
+
+[node name="3Ball" parent="StaticBody3D/pool_table/3ball" instance=ExtResource("4_tuemg")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/3ball"]
+shape = SubResource("SphereShape3D_i0g27")
+
+[node name="4ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03093157, 0.057456806, -0.8647295)
+
+[node name="4Ball" parent="StaticBody3D/pool_table/4ball" instance=ExtResource("5_i0g27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00010433048, 0, 0.00026792288)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/4ball"]
+shape = SubResource("SphereShape3D_ealrb")
+
+[node name="5ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06017006, 0.058403388, -0.8101818)
+
+[node name="5Ball" parent="StaticBody3D/pool_table/5ball" instance=ExtResource("6_ealrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4755875e-05, -0.00094658136, -0.00041139126)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/5ball"]
+shape = SubResource("SphereShape3D_jsnrv")
+
+[node name="6ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.062064476, 0.057456806, -0.80862576)
+
+[node name="6Ball" parent="StaticBody3D/pool_table/6ball" instance=ExtResource("7_jsnrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0034230277, 0, -0.00196743)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/6ball"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0028775632, 0, 0)
+shape = SubResource("SphereShape3D_lggff")
+
+[node name="7ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.062834576, 0.057456806, -0.9198624)
+
+[node name="7Ball" parent="StaticBody3D/pool_table/7ball" instance=ExtResource("8_lggff")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/7ball"]
+shape = SubResource("SphereShape3D_s0gvp")
+
+[node name="8ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0006563589, 0.057456806, -0.8105932)
+
+[node name="8Ball" parent="StaticBody3D/pool_table/8ball" instance=ExtResource("9_s0gvp")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/8ball"]
+shape = SubResource("SphereShape3D_vxd74")
+
+[node name="9ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09270257, 0.057456806, -0.8644616)
+
+[node name="9Ball" parent="StaticBody3D/pool_table/9ball" instance=ExtResource("10_vxd74")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/9ball"]
+shape = SubResource("SphereShape3D_dhlwf")
+
+[node name="10ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09480493, 0.057456806, -0.8682775)
+
+[node name="10Ball" parent="StaticBody3D/pool_table/10ball" instance=ExtResource("11_dhlwf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/10ball"]
+shape = SubResource("SphereShape3D_5t8nk")
+
+[node name="11ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028962798, 0.057456806, -0.7539944)
+
+[node name="11Ball" parent="StaticBody3D/pool_table/11ball" instance=ExtResource("12_5t8nk")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/11ball"]
+shape = SubResource("SphereShape3D_j3e5s")
+
+[node name="12ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12638481, 0.057456806, -0.9198624)
+
+[node name="12Ball" parent="StaticBody3D/pool_table/12ball" instance=ExtResource("13_j3e5s")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/12ball"]
+shape = SubResource("SphereShape3D_nu31w")
+
+[node name="13ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00045253336, 0.057456806, -0.9198624)
+
+[node name="13Ball" parent="StaticBody3D/pool_table/13ball" instance=ExtResource("14_nu31w")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/13ball"]
+shape = SubResource("SphereShape3D_obt1j")
+
+[node name="14ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.030420236, 0.057456806, -0.7539944)
+
+[node name="14Ball" parent="StaticBody3D/pool_table/14ball" instance=ExtResource("15_obt1j")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/14ball"]
+shape = SubResource("SphereShape3D_2yde8")
+
+[node name="15ball" type="RigidBody3D" parent="StaticBody3D/pool_table"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1200982, 0.057456806, -0.9198624)
+
+[node name="15Ball" parent="StaticBody3D/pool_table/15ball" instance=ExtResource("16_2yde8")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/pool_table/15ball"]
+shape = SubResource("SphereShape3D_id0nj")
+
+[node name="surface" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.46996462, 0.005418062)
+shape = SubResource("BoxShape3D_tcnuu")
+
+[node name="wall1" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.64234394, 0.12263346, -0.647077)
+shape = SubResource("BoxShape3D_tuemg")
+
+[node name="wall2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.64234394, 0.12263346, 0.6496356)
+shape = SubResource("BoxShape3D_tuemg")
+
+[node name="wall3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64602953, 0.12263346, 0.6496356)
+shape = SubResource("BoxShape3D_tuemg")
+
+[node name="wall4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64602953, 0.12263346, -0.6470769)
+shape = SubResource("BoxShape3D_tuemg")
+
+[node name="wall5" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019622803, 0.13139543, -1.3880037)
+shape = SubResource("BoxShape3D_i0g27")
+
+[node name="wall6" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019622803, 0.13139543, 1.392688)
+shape = SubResource("BoxShape3D_i0g27")
+
+[node name="pool_cue" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.9832549, -0.18223558, 0, 0.18223558, -0.9832549, 0.0012382865, 0.24376374, 1.4097531)
+
+[node name="pool_cue" parent="pool_cue" instance=ExtResource("18_i0g27")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pool_cue"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.013427734)
+shape = SubResource("CylinderShape3D_ealrb")
